@@ -14,6 +14,12 @@
 		8861704E1DDB8E8500F126AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8861704C1DDB8E8500F126AC /* Main.storyboard */; };
 		886170501DDB8E8500F126AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8861704F1DDB8E8500F126AC /* Assets.xcassets */; };
 		886170531DDB8E8500F126AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886170511DDB8E8500F126AC /* LaunchScreen.storyboard */; };
+		8861705B1DDB927600F126AC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8861705A1DDB927600F126AC /* README.md */; };
+		8861705E1DDB933000F126AC /* MNServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8861705D1DDB933000F126AC /* MNServerManager.m */; };
+		886170631DDB953B00F126AC /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 886170621DDB953B00F126AC /* User.m */; };
+		886170661DDB955A00F126AC /* ServerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 886170651DDB955A00F126AC /* ServerObject.m */; };
+		8861706A1DDB961B00F126AC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 886170691DDB961B00F126AC /* LoginViewController.m */; };
+		8861706E1DDB964C00F126AC /* AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 8861706D1DDB964C00F126AC /* AccessToken.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,17 @@
 		8861704F1DDB8E8500F126AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		886170521DDB8E8500F126AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		886170541DDB8E8500F126AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8861705A1DDB927600F126AC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		8861705C1DDB933000F126AC /* MNServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNServerManager.h; sourceTree = "<group>"; };
+		8861705D1DDB933000F126AC /* MNServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNServerManager.m; sourceTree = "<group>"; };
+		886170611DDB953B00F126AC /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		886170621DDB953B00F126AC /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		886170641DDB955A00F126AC /* ServerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerObject.h; sourceTree = "<group>"; };
+		886170651DDB955A00F126AC /* ServerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerObject.m; sourceTree = "<group>"; };
+		886170681DDB961B00F126AC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		886170691DDB961B00F126AC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8861706C1DDB964C00F126AC /* AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessToken.h; sourceTree = "<group>"; };
+		8861706D1DDB964C00F126AC /* AccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessToken.m; sourceTree = "<group>"; };
 		C26E6FD2978A814079E2F940 /* libPods-iOSDevelopmentCourse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSDevelopmentCourse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4322025E1F57677BE6188A0 /* Pods-iOSDevelopmentCourse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDevelopmentCourse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDevelopmentCourse/Pods-iOSDevelopmentCourse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,10 +90,13 @@
 		886170421DDB8E8500F126AC /* iOSDevelopmentCourse */ = {
 			isa = PBXGroup;
 			children = (
+				8861705A1DDB927600F126AC /* README.md */,
 				886170461DDB8E8500F126AC /* AppDelegate.h */,
 				886170471DDB8E8500F126AC /* AppDelegate.m */,
-				886170491DDB8E8500F126AC /* ViewController.h */,
-				8861704A1DDB8E8500F126AC /* ViewController.m */,
+				8861706B1DDB963800F126AC /* Access Token */,
+				886170671DDB960600F126AC /* View controllers */,
+				886170601DDB951B00F126AC /* Models */,
+				8861705F1DDB933700F126AC /* Server Manager */,
 				8861704C1DDB8E8500F126AC /* Main.storyboard */,
 				8861704F1DDB8E8500F126AC /* Assets.xcassets */,
 				886170511DDB8E8500F126AC /* LaunchScreen.storyboard */,
@@ -92,6 +112,46 @@
 				886170441DDB8E8500F126AC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8861705F1DDB933700F126AC /* Server Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8861705C1DDB933000F126AC /* MNServerManager.h */,
+				8861705D1DDB933000F126AC /* MNServerManager.m */,
+			);
+			name = "Server Manager";
+			sourceTree = "<group>";
+		};
+		886170601DDB951B00F126AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				886170641DDB955A00F126AC /* ServerObject.h */,
+				886170651DDB955A00F126AC /* ServerObject.m */,
+				886170611DDB953B00F126AC /* User.h */,
+				886170621DDB953B00F126AC /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		886170671DDB960600F126AC /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				886170681DDB961B00F126AC /* LoginViewController.h */,
+				886170691DDB961B00F126AC /* LoginViewController.m */,
+				886170491DDB8E8500F126AC /* ViewController.h */,
+				8861704A1DDB8E8500F126AC /* ViewController.m */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
+		8861706B1DDB963800F126AC /* Access Token */ = {
+			isa = PBXGroup;
+			children = (
+				8861706C1DDB964C00F126AC /* AccessToken.h */,
+				8861706D1DDB964C00F126AC /* AccessToken.m */,
+			);
+			name = "Access Token";
 			sourceTree = "<group>";
 		};
 		E775DCC846BB36FEE11F4D6B /* Pods */ = {
@@ -184,7 +244,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		952D19DBF8CF3BF834DAD104 /* [CP] Embed Pods Frameworks */ = {
@@ -224,8 +284,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8861706A1DDB961B00F126AC /* LoginViewController.m in Sources */,
 				8861704B1DDB8E8500F126AC /* ViewController.m in Sources */,
+				886170661DDB955A00F126AC /* ServerObject.m in Sources */,
+				8861705E1DDB933000F126AC /* MNServerManager.m in Sources */,
+				886170631DDB953B00F126AC /* User.m in Sources */,
+				8861706E1DDB964C00F126AC /* AccessToken.m in Sources */,
 				886170481DDB8E8500F126AC /* AppDelegate.m in Sources */,
+				8861705B1DDB927600F126AC /* README.md in Sources */,
 				886170451DDB8E8500F126AC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +443,7 @@
 				886170591DDB8E8500F126AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
